@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>República de Yofre</title>
+
+    <link rel="stylesheet" href="../ccs/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@300;400;500;600;700;800;900&family=Poiret+One&display=swap" rel="stylesheet">
+
+    <!-- Cargar Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+
+
+</head>
+<body>
+    <header id="header">
+        <nav class="top-header">
+
+            <div class="logo-yofre">
+                <a href="../index.html" >
+                <img src="/images/logo-yofre.png" alt="Logo-Yofre" height="100px">  
+                </a>
+            </div>
+
+            <div class="buscador">
+                <form action="/buscar" method="get">
+                    <input type="text" name="q" placeholder="¿Qué estás buscando?" aria-label="Buscar">
+                    <button type="submit">
+                        <i class="fas fa-search"></i> <!-- Ícono de lupa de Font Awesome -->
+                    </button>
+                </form>
+            </div>
+
+            <div>
+            <a class="acceso" href="acceso.html">Tengo Comercio</a> 
+            </div>
+
+        </nav> 
+
+        <!-- Aca comienza la barra de links-->
+        <nav class="barra-nav">
+            <ul class="menu">
+                <ul><a href="">Categorías</a>
+                    <ul class="submenu">
+                        <ul><a href="">Ropa</a>
+                            <li><a href="">Mujer</a></li>
+                            <li><a href="">Hombres</a></li>
+                            <li><a href="">Niños</a></li>
+                        </ul>
+                        <ul><a href="">Comestibles</a></ul>
+                        <ul><a href="">Regalería</a></ul>
+                        <ul><a href="">Hogar</a></ul>
+                    </ul>
+                </ul>
+                <ul><a href="catalogo.html">Catálogo</a></ul>
+                <ul><a href="comercios.html">Comercios</a></ul>
+                <ul><a href="preguntas.html">Preguntas Frecuentes</a></ul>
+            </ul>
+        </nav>
+    
+    </header>
+    <!-- Aca termina el encabezado-->
+
+
+    <main id="main">
+    
+    
+        <section class="titulo-main">
+            <h2>Comercios de la zona</h2>
+        </section>
+
+        <div class="container">
+            <!-- Lista de lugares --> 
+            <div id="list">
+                <ul>
+                    <li data-lat="-31.388533" data-lng="-64.13421">Musimundo [Electrónica]</li>
+                    <a href="#">Ver más</a>
+                    <li data-lat="-31.38268" data-lng="-64.13400">Naranja X [Compras]</li>
+                    <a href="#">Ver más</a>
+                    <li data-lat="-31.383110" data-lng="-64.134175">Centro Vecinal Yofre Norte</li>
+                    <a href="#">Ver más</a>
+                    <li data-lat="-31.386985" data-lng="-64.13404">Burguerlandia [Comidas]</li>
+                    <a href="#">Ver más</a>
+                </ul>
+            </div>
+    
+            <!-- Mapa de Google Maps -->
+            <div id="map"></div>
+        </div>
+    </main>
+
+
+    <!-- Aca comienza el pie -->
+    <footer id="footer">
+        <p>En este sitio gratuito conectarás con comercios de Yofre Norte, calle Altoguirre y zonas cercanas.
+        Accedé al catálogo con miles de productos y diversas categorías. 
+        </p>
+        <p>Si tenés consultas podés pasar por las <a href="preguntas.html">Preguntas Frecuentes</a>.
+        Por otras dudas o sugerencias podés <a href="contacto.html">contactarnos</a> o enviarnos un e-mail a <a href="mailto:info@republicadeyofre.com">info@republicadeyofre.com</a>
+
+        </p>
+    </footer>
+</body>
+
+
+         <!-- Script de la API de Google Maps -->
+         <script>
+            // Inicializar el mapa 
+            let markers = [];
+    
+            function initMap() {
+                // Coordenadas iniciales (centro del mapa), 
+                const center = { lat: -31.3849, lng: -64.134064 };
+    
+                // Crear el mapa
+                map = new google.maps.Map(document.getElementById("map"), {
+                    zoom: 15,
+                    center: center,
+                });
+    
+                // Agregar marcadores basados en la lista
+                const places = document.querySelectorAll("#list li");
+                places.forEach((place) => {
+                    const lat = parseFloat(place.getAttribute("data-lat"));
+                    const lng = parseFloat(place.getAttribute("data-lng"));
+                    const marker = new google.maps.Marker({
+                        position: { lat, lng },
+                        map: map,
+                        title: place.textContent,
+                    });
+                    markers.push(marker);
+    
+                    // Evento para centrar el mapa al hacer clic en un lugar
+                    place.addEventListener("click", () => {
+                        map.setCenter(marker.getPosition());
+                        map.setZoom(17);
+                    });
+                });
+            }
+        </script>
+        <!-- Cargar la API de Google Maps con tu API Key -->
+        <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCvqdP4earwcMNPRRskvGtWmean5tOx5T4&callback=initMap">
+        </script>
+
+</html>

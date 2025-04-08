@@ -1,0 +1,174 @@
+*{
+    padding: O;
+    margin: 0;
+}
+
+
+/* Estilos básicos para el menú */
+
+body {
+font-family: "Encode Sans", serif;
+background-color: #a6f18f
+}
+
+
+header {
+background-color: #4fd38a;
+}
+
+a {
+text-decoration: none;
+color: #ffffff;
+}
+
+main{
+    background-color: white;
+}
+
+/* configuracion buscador*/
+
+.buscador {
+justify-content: center;
+}
+.buscador input[type="text"] {
+padding: 10px;
+font-size: 16px;
+border: 2px solid #d14018;
+border-radius: 4px 0 0 4px; /* Bordes redondeados solo a la izquierda */
+width: 300px;
+outline: none;
+color: red;
+background-color: #a6f18f;
+}
+.buscador input::placeholder {
+color: white
+}
+
+.buscador button {
+padding: 10px 15px;
+font-size: 16px;
+border: none;
+background-color: #d14018;
+color: white;
+border-radius: 0px 6px 6px 0px; /* Bordes redondeados solo a la derecha */
+cursor: pointer;
+}
+.buscador button:hover {
+background-color: #932d11;
+}
+/* Acá configuracion del Acceso de Comercios */
+
+.acceso{
+color: #d14018;
+font-weight: bold;
+}
+
+
+/* Acá comienzas la configuración del menu de categorias y navegacion */
+.barra-nav {
+    background-color: #0a68da;
+}
+
+.menu {
+padding: 0;
+margin: 0;
+}
+
+.menu li a {
+color: white;
+}
+
+.barra-nav ul a:hover {
+background-color: #084692;
+}
+
+.submenu {
+background-color: #1c7aec;
+padding: 0;
+margin: 0;
+}
+
+.submenu li a:hover {
+background-color: #084692;
+}
+
+/* aca comienza main del index*/
+.titulo-main h2{
+    color: white;
+    text-align: center;
+}
+.titulo-main{
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    border-radius: 0px;
+}
+
+section{
+background-color: #4fd38a;
+padding: 10px;
+margin: 10px;
+border-radius: 4px;
+}
+
+
+/* aca comienza main del acceso*/
+
+.acceso-form input[type="submit"] {
+background-color: #1c7aec;
+color: #ffffff;
+}
+
+.acceso-form a {
+    color: #d14018;
+    text-decoration: underline;
+}
+
+/* aca comienza main del acceso*/
+
+.contacto-form input[type="submit"] {
+    background-color: #1c7aec;
+    color: #ffffff;
+    }
+
+
+/* comienza main de los comercios*/
+#map {
+    height: 400px; /* Altura del mapa */
+    width: 100%; /* Ancho del mapa */
+}
+.container {
+    display: flex;
+}
+#list {
+    width: 200px;
+    margin-right: 20px;
+}
+#list ul {
+    list-style-type: none;
+    padding: 0;
+}
+#list li {
+    cursor: pointer;
+    padding: 10px;
+    background-color: #a6f18f;
+    margin-bottom: 5px;
+}
+#list li:hover {
+    background-color: #4fd38a;
+}
+#list a{
+    color:#ffffff;
+    background-color: #4fd38a;
+}
+/* aca comienza footer*/
+
+footer a {
+color: black;
+font-weight: bold;
+}
+footer{
+    background-color: #a6f18f;
+    padding: 10px;
+    margin: 10px;
+}
