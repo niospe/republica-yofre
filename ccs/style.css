@@ -9,13 +9,11 @@
 body {
 font-family: "Encode Sans", serif;
 background-color: #f4f5f0;
-
 }
 
 header {
 background-color: #4fd38a;
 justify-content: center;
-
 }
 
 a {
@@ -42,7 +40,7 @@ color: #ffffff;
 }
 
 
-/* configuracion buscador*/
+/* configuración buscador*/
 
 .buscador {
     display: flex;
