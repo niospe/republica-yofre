@@ -113,7 +113,7 @@ color: #ffffff;
     position: absolute;
     top: 100%;
     left: 0;
-    background-color: #bcbcbc;
+    background-color: #979797;
     list-style: none;
     padding: 0;
     margin: 0;
@@ -155,7 +155,7 @@ color: #ffffff;
     margin-left: auto;
     margin-right: auto;
 }
-#main{
+#main-index{
     background-color: f4f5f0;
     min-height: 100vh;
     padding: 10px 0 0 0;
@@ -180,9 +180,11 @@ color: #ffffff;
 
 .content-main{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    
+    gap: 10px;
+    margin-top: 20px;
 }
 
 .categoria-main{
@@ -190,16 +192,14 @@ color: #ffffff;
     flex-direction: column;
     align-items: center;
     background-color: #a6f18f;
-    padding: 10px;
-    margin: 20px;
     border-radius: 4px;
     width: 25%;
     height: auto;
+    padding: 20px;
 }
 
 .categoria-main a{
-    margin: 15px;
-    font-size: 2em;
+    font-size: 1.5em;
     text-align: center;
 }
 
@@ -211,19 +211,53 @@ color: #ffffff;
 .content-main img{
     width: 100%;
     height: auto;
+    margin-top: 20px;
 }
 
 
-/* aca comienza main del acceso*/
+/* aca comienza main del acceso comercios*/
+#main-acceso{
+    background: linear-gradient(45deg, #192615, #0b6d37);
+    min-height: 80vh;
+    padding: 10px 0 0 0;
+    display: block;
+    justify-content: center;
+}
+.acceso-form{
+    width: 20rem;
+    height: 20rem;
+    background-color: #979797;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5%;
+    border-color: solid #b0b0b0 ;
+    justify-items: center;
+    align-content: center;
+    box-shadow: 0 4px 8px #1c7aec
+}
 
+.input-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.acceso-form input{
+    margin: 20px;
+    font-size: 1rem;
+}
 .acceso-form input[type="submit"] {
 background-color: #1c7aec;
 color: #ffffff;
+padding: 10px 20px;
+border-radius: 5px;
+margin-top: 30px;
 }
 
 .acceso-form a {
-    color: #d14018;
+    color: #f4f5f0;
     text-decoration: underline;
+    font-size: .7rem;
 }
 
 /* aca comienza main del acceso*/
@@ -264,6 +298,7 @@ color: #ffffff;
     background-color: #4fd38a;
 }
 /* aca comienza footer*/
+
 footer{
     background-color: #a6f18f;
 }
@@ -282,6 +317,7 @@ font-weight: bold;
 
 .texto-footer{
     width: 50%;
+    padding: 10px;
 }
 
 .derechos.footer{
