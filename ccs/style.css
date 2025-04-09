@@ -21,94 +21,172 @@ text-decoration: none;
 color: #ffffff;
 }
 
-main{
-    background-color: white;
+.top-header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
 }
+
+
+.barra-nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #acacac;
+        
+}
+
+
 
 /* configuracion buscador*/
 
 .buscador {
-justify-content: center;
+    display: flex;
+    justify-content: center;
 }
 .buscador input[type="text"] {
-padding: 10px;
-font-size: 16px;
-border: 2px solid #d14018;
-border-radius: 4px 0 0 4px; /* Bordes redondeados solo a la izquierda */
-width: 300px;
-outline: none;
-color: red;
-background-color: #a6f18f;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #d14018;
+    border-radius: 4px 0 0 4px; /* Bordes redondeados solo a la izquierda */
+    width: 300px;
+    outline: none;
+    color: red;
+    background-color: #a6f18f;
 }
 .buscador input::placeholder {
-color: white
+    color: #d14018
 }
 
 .buscador button {
-padding: 10px 15px;
-font-size: 16px;
-border: none;
-background-color: #d14018;
-color: white;
-border-radius: 0px 6px 6px 0px; /* Bordes redondeados solo a la derecha */
-cursor: pointer;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    background-color: #d14018;
+    color: white;
+    border-radius: 0 4x 4px 0; /* Bordes redondeados solo a la derecha */
+    cursor: pointer;
 }
 .buscador button:hover {
-background-color: #932d11;
+    background-color: #932d11;
 }
+
 /* Acá configuracion del Acceso de Comercios */
 
 .acceso{
-color: #d14018;
-font-weight: bold;
+    color: #d14018;
+    font-weight: bold;
 }
 
 
 /* Acá comienzas la configuración del menu de categorias y navegacion */
-.barra-nav {
-    background-color: #0a68da;
-}
 
 .menu {
-padding: 0;
-margin: 0;
+    
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.menu li {
+    position: relative;
 }
 
 .menu li a {
-color: white;
+    display: block;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
 }
 
-.barra-nav ul a:hover {
-background-color: #084692;
+.menu li a:hover {
+    background-color: #979797;
 }
 
+/* Submenú (oculto por defecto) */
 .submenu {
-background-color: #1c7aec;
-padding: 0;
-margin: 0;
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #bcbcbc;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    min-width: 150px;
+}
+
+.submenu li a {
+    padding: 10px;
+    color: white;
 }
 
 .submenu li a:hover {
-background-color: #084692;
+    background-color: #b0b0b0;
 }
 
+/* Mostrar submenú al pasar el mouse */
+.menu li:hover > .submenu {
+    display: block;
+}
+
+/* Submenú anidado (subcategorías) */
+.submenu .submenu {
+    left: 100%;
+    top: 0;
+}
+
+
 /* aca comienza main del index*/
+#main{
+    background-color: white;
+    min-height: 80vh;
+    padding: 10px 0 0 0;
+}
+
 .titulo-main h2{
     color: white;
     text-align: center;
 }
+
 .titulo-main{
     width: 100%;
     margin: 0px;
     padding: 0px;
     border-radius: 0px;
+    background-color: #4fd38a;
 }
 
-section{
-background-color: #4fd38a;
-padding: 10px;
-margin: 10px;
-border-radius: 4px;
+.content-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.categoria-main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #4fd38a;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 4px;
+    width: 25%;
+    height: auto;
+}
+
+.content-main :hover{
+    background-color: #a6f18f;
+
+}
+
+.content-main img{
+    width: 100%;
+    height: auto;
 }
 
 
@@ -168,7 +246,24 @@ color: black;
 font-weight: bold;
 }
 footer{
+    display: flex;
+    justify-content: space-between;
     background-color: #a6f18f;
     padding: 10px;
     margin: 10px;
+    
+}
+
+.texto-footer{
+    width: 50%;
+}
+
+.derechos.footer{
+    width: 25%;
+}
+
+.redes-footer{
+    width: 25%;
+    display: flex;
+    justify-content: space-around;
 }
