@@ -20,92 +20,94 @@
 </head>
 <body>
     <header id="header">
-        <nav class="top-header">
+            <nav class="top-header responsive-widht">
+                    <div class="logo-yofre">
+                        <a href="#" >
+                        <img src="images/logo-yofre.png" alt="Logo-Yofre" height="100px">  
+                        </a>
+                    </div>
 
-            <div class="logo-yofre">
-                <a href="#" >
-                <img src="images/logo-yofre.png" alt="Logo-Yofre" height="100px">  
-                </a>
-            </div>
+                    <div class="buscador">
+                        <form action="/buscar" method="get">
+                            <input type="text" name="q" placeholder="¿Qué estás buscando?" aria-label="Buscar">
+                            <button type="submit">
+                                <i class="fas fa-search"></i> <!-- Ícono de lupa de Font Awesome -->
+                            </button>
+                        </form>
+                    </div>
 
-            <div class="buscador">
-                <form action="/buscar" method="get">
-                    <input type="text" name="q" placeholder="¿Qué estás buscando?" aria-label="Buscar">
-                    <button type="submit">
-                        <i class="fas fa-search"></i> <!-- Ícono de lupa de Font Awesome -->
-                    </button>
-                </form>
-            </div>
+                    <div>
+                    <a class="acceso" href="pages/acceso.html">Tengo Comercio</a> 
+                    </div>
+                
+            </nav> 
 
-            <div>
-            <a class="acceso" href="pages/acceso.html">Tengo Comercio</a> 
-            </div>
-
-        </nav> 
-
-        <!-- Aca comienza la barra de links-->
-        <nav class="barra-nav">
-            <div> 
-                <ul class="menu">
-            
-                <li><a href="#">Categorías</a>
-                    <ul class="submenu">
-                        <li><a href="#">Ropa</a>
+            <!-- Aca comienza la barra de links-->
+            <nav class="back-nav">
+                <nav class="barra-nav responsive-widht">
+                    <div> 
+                        <ul class="menu ">
+                    
+                        <li><a href="#">Categorías</a>
                             <ul class="submenu">
-                                <li><a href="#">Mujer</a></li>
-                                <li><a href="#">Hombre</a></li>
-                                <li><a href="#">Niños</a></li>
+                                <li><a href="#">Ropa</a>
+                                    <ul class="submenu">
+                                        <li><a href="#">Mujer</a></li>
+                                        <li><a href="#">Hombre</a></li>
+                                        <li><a href="#">Niños</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Comestibles</a></li>
+                                <li><a href="#">Regaleria</a>
+                                </li>
+                                <li><a href="#">Hogar</a></li>
                             </ul>
                         </li>
-                        <li><a href="#">Comestibles</a></li>
-                        <li><a href="#">Regaleria</a>
-                        </li>
-                        <li><a href="#">Hogar</a></li>
-                    </ul>
-                </li>
-                </ul>
-            </div>
-            <div><a href="/pages/catalogo.html">Catalogo</a></div>
-            <div><a href="/pages/comercios.html">Comercios</a></div>
-            <div><a href="/pages/preguntas.html">Preguntas Frecuentes</a></div>
-        </nav>
-    
+                        </ul>
+                    </div>
+                    <div><a href="/pages/catalogo.html">Catálogo</a></div>
+                    <div><a href="/pages/comercios.html">Comercios</a></div>
+                    <div><a href="/pages/preguntas.html">Preguntas Frecuentes</a></div>
+                </nav>
+            </nav>
+        
     </header>
     <!-- Aca termina el encabezado-->
 
 
     <main id="main">
+        <section >
+            <section class="titulo-main">
+                <h2>Categorías Destacadas</h2>
+            </section>
+            <div class="content-main responsive-widht">
+                <section class="categoria-main">
+                    <a href="#">Ropa<img src="images/ropa.jpg" alt="icono de ropa" height="50px"></a>
+                </section>    
+                
+                <section class="categoria-main">
+                    <a href="#">Comestibles
+                    <img src="images/comida.jpg" alt="icono de comida" height="50px"></a>
+                </section> 
 
-        <section class="titulo-main">
-            <h2>Categorías Destacadas</h2>
+                <section class="categoria-main">
+                    <a href="#">Regalería
+                    <img src="images/regalo.jpg" alt="icono de regalo" height="50px"></a>
+                </section> 
+
+                <section class="categoria-main">
+                    <a href="#">Hogar
+                    <img src="images/hogar.jpg" alt="icono de hogar" height="50px"></a>
+                </section> 
+            </div>
         </section>
-        <div class="content-main">
-            <section class="categoria-main">
-                <a href="#">Ropa</a>
-                <img src="images/ropa.png" alt="icono de ropa" height="50px">
-            </section>    
-            
-            <section class="categoria-main">
-                <a href="#">Comestibles</a>
-                <img src="images/comida.png" alt="icono de comida" height="50px">
-            </section> 
-
-            <section class="categoria-main">
-                <a href="#">Regalería</a>
-                <img src="images/regalo.png" alt="icono de regalo" height="50px">
-            </section> 
-
-            <section class="categoria-main">
-                <a href="#">Hogar</a>
-                <img src="images/hogar.png" alt="icono de hogar" height="50px">
-            </section> 
-        </div>
     </main>
 
 
     <!-- Aca comienza el pie -->
     <footer id="footer">
-        <section class="texto-footer">
+        <section class="footer responsive-widht">
+            <section class="texto-footer">
             <p>En este sitio gratuito conectarás con comercios de Yofre Norte, calle Altoguirre y zonas cercanas.
             Accedé al catálogo con miles de productos y diversas categorías. 
             </p>
@@ -113,13 +115,14 @@
             Por otras dudas o sugerencias podés <a href="pages/contacto.html">contactarnos</a> o enviarnos un e-mail a <a href="mailto:info@republicadeyofre.com">info@republicadeyofre.com</a>
 
             </p>
-        </section>
-        <section class="derechos-footer"></section>
-        <section class="redes-footer">
-            <a href="https://www.instagram.com/" target="_blank"><i class="bi bi-instagram"></i></a>
-            <a href="https://www.tiktok.com/" target="_blank"><i class="bi bi-tiktok"></i></a>
-            <a href="https://www.x.com/" target="_blank"><i class="bi bi-twitter-x"></i></a>
-            
+            </section>
+            <section class="derechos-footer"></section>
+            <section class="redes-footer">
+                <a href="https://www.instagram.com/" target="_blank"><i class="bi bi-instagram"></i></a>
+                <a href="https://www.tiktok.com/" target="_blank"><i class="bi bi-tiktok"></i></a>
+                <a href="https://www.x.com/" target="_blank"><i class="bi bi-twitter-x"></i></a>
+                
+            </section>
         </section>
     </footer>
 

@@ -8,12 +8,14 @@
 
 body {
 font-family: "Encode Sans", serif;
-background-color: #a6f18f
-}
+background-color: #f4f5f0;
 
+}
 
 header {
 background-color: #4fd38a;
+justify-content: center;
+
 }
 
 a {
@@ -25,7 +27,6 @@ color: #ffffff;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    
 }
 
 
@@ -36,7 +37,9 @@ color: #ffffff;
     background-color: #acacac;
         
 }
-
+.back-nav{
+    background-color: #acacac;
+}
 
 
 /* configuracion buscador*/
@@ -124,6 +127,14 @@ color: #ffffff;
     color: white;
 }
 
+.barra-nav div a{
+    padding: 10px 20px;
+}
+
+.barra-nav div :hover{
+    background-color: #979797;
+}
+
 .submenu li a:hover {
     background-color: #b0b0b0;
 }
@@ -141,15 +152,24 @@ color: #ffffff;
 
 
 /* aca comienza main del index*/
-#main{
-    background-color: white;
-    min-height: 80vh;
-    padding: 10px 0 0 0;
+.responsive-widht{
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
 }
+#main{
+    background-color: f4f5f0;
+    min-height: 100vh;
+    padding: 10px 0 0 0;
+    display: block;
+    justify-content: center;
+}
+
 
 .titulo-main h2{
     color: white;
     text-align: center;
+    padding: 10px 20px;
 }
 
 .titulo-main{
@@ -157,7 +177,7 @@ color: #ffffff;
     margin: 0px;
     padding: 0px;
     border-radius: 0px;
-    background-color: #4fd38a;
+    background-color: #a6f18f;
 }
 
 .content-main{
@@ -171,7 +191,7 @@ color: #ffffff;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #4fd38a;
+    background-color: #a6f18f;
     padding: 10px;
     margin: 20px;
     border-radius: 4px;
@@ -179,10 +199,16 @@ color: #ffffff;
     height: auto;
 }
 
-.content-main :hover{
-    background-color: #a6f18f;
-
+.categoria-main a{
+    margin: 15px;
+    font-size: 2em;
+    text-align: center;
 }
+
+.content-main :hover{
+    background-color: #4fd38a;
+}
+
 
 .content-main img{
     width: 100%;
@@ -240,18 +266,20 @@ color: #ffffff;
     background-color: #4fd38a;
 }
 /* aca comienza footer*/
+footer{
+    background-color: #a6f18f;
+}
 
 footer a {
 color: black;
 font-weight: bold;
 }
-footer{
+
+.footer{
     display: flex;
     justify-content: space-between;
     background-color: #a6f18f;
     padding: 10px;
-    margin: 10px;
-    
 }
 
 .texto-footer{
@@ -265,5 +293,11 @@ footer{
 .redes-footer{
     width: 25%;
     display: flex;
-    justify-content: space-around;
+    align-items: center;
+    justify-content: right;
+    
+}
+
+.redes-footer i {
+    margin: 10px;
 }
