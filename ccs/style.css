@@ -2,23 +2,32 @@
     padding: O;
     margin: 0;
 }
+:root{
+    --color-1: #4fd38a;
+    --color-2: #a6f18f;
+    --color-3: #d14018;
+    --color-4: #932d11;
+    --color-5: #acacac;
+    --color-6: #979797;
+    --color-7: #f4f5f0;
 
+}
 
 /* Estilos básicos para el menú */
 
 body {
 font-family: "Encode Sans", serif;
-background-color: #f4f5f0;
+background-image: linear-gradient(60deg, var(--color-1), var(--color-2));
 }
 
 header {
-background-color: #4fd38a;
 justify-content: center;
 }
 
 a {
 text-decoration: none;
-color: #ffffff;
+color: var(--color-7);
+font-weight: bold;
 }
 
 .top-header {
@@ -32,11 +41,6 @@ color: #ffffff;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: #acacac;
-        
-}
-.back-nav{
-    background-color: #acacac;
 }
 
 
@@ -64,19 +68,19 @@ color: #ffffff;
     padding: 10px 15px;
     font-size: 16px;
     border: none;
-    background-color: #d14018;
-    color: white;
+    background-color: var(--color-3);
+    color: var(--color-7);
     border-radius: 0 4x 4px 0; /* Bordes redondeados solo a la derecha */
     cursor: pointer;
 }
 .buscador button:hover {
-    background-color: #932d11;
+    background-color: var(--color-4);
 }
 
 /* Acá configuracion del Acceso de Comercios */
 
 .acceso{
-    color: #d14018;
+    color: var(--color-3);
     font-weight: bold;
 }
 
@@ -90,22 +94,22 @@ color: #ffffff;
     margin: 0;
     display: flex;
     justify-content: flex-start;
+    z-index: 9999;
 }
 
 .menu li {
     position: relative;
+    
 }
 
 .menu li a {
     display: block;
     padding: 10px 20px;
-    color: white;
+    color: var(--color-7);
     text-decoration: none;
 }
 
-.menu li a:hover {
-    background-color: #979797;
-}
+
 
 /* Submenú (oculto por defecto) */
 .submenu {
@@ -113,28 +117,29 @@ color: #ffffff;
     position: absolute;
     top: 100%;
     left: 0;
-    background-color: #979797;
     list-style: none;
     padding: 0;
     margin: 0;
     min-width: 150px;
+    z-index: 9998;
 }
 
 .submenu li a {
     padding: 10px;
-    color: white;
+    color: var(--color-7);
 }
 
 .barra-nav div a{
     padding: 10px 20px;
 }
 
-.barra-nav div :hover{
-    background-color: #979797;
+.barra-nav  :hover{
+    background-color: var(--color-2);
 }
 
+
 .submenu li a:hover {
-    background-color: #b0b0b0;
+    background-color: var(--color-1);
 }
 
 /* Mostrar submenú al pasar el mouse */
@@ -150,22 +155,49 @@ color: #ffffff;
 
 
 /* aca comienza main del index*/
+
+
+.main{
+    width: 100%;
+    height: 70vh;    
+    background-color: #932d11;
+    transform: skewy(-5deg);
+    margin-top: 50px;
+    margin-bottom: 50px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.main iframe {
+    transform: skewy(5deg) 
+    
+}
 .responsive-widht{
     max-width: 1400px;
     margin-left: auto;
     margin-right: auto;
 }
 #main-index{
-    background-color: f4f5f0;
-    min-height: 100vh;
     padding: 10px 0 0 0;
     display: block;
     justify-content: center;
 }
 
+.texto-presentacion{
+    color: var(--color-7);
+    position: absolute;
+    transform: skewY(5deg);
+    background-color: rgba(136, 25, 25, 0.7);
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px;
+    text-align: center;
+}
 
 .titulo-main h2{
-    color: white;
+    color: var(--color-7);
     text-align: center;
     padding: 10px 20px;
 }
@@ -185,17 +217,20 @@ color: #ffffff;
     align-items: center;
     gap: 10px;
     margin-top: 20px;
+    border-color: 2px white;
 }
 
 .categoria-main{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #a6f18f;
     border-radius: 4px;
     width: 25%;
     height: auto;
     padding: 20px;
+    margin: 10px;
+    transition: all 300ms;
+    border: 1.5px solid var(--color-1);
 }
 
 .categoria-main a{
@@ -204,43 +239,69 @@ color: #ffffff;
 }
 
 .content-main :hover{
-    background-color: #4fd38a;
+    box-shadow: -5px 5px 0 0 var(--color-4), -10px 10px var(--color-3);
+    transform: translate(5px, -5px);
 }
 
+.categoria-main :hover {
+    box-shadow: none;
+    transform: translate(0px, 0px);
+}
 
 .content-main img{
     width: 100%;
     height: auto;
     margin-top: 20px;
+    border-radius: 5px;
 }
 
-
-/* aca comienza main del acceso comercios*/
-#main-acceso{
-    background: linear-gradient(45deg, #192615, #0b6d37);
+/* aca comienza main del catalogo*/
+#main-catalogo{
     min-height: 80vh;
     padding: 10px 0 0 0;
     display: block;
     justify-content: center;
 }
+
+.titulo-main{
+    background-color: #932d11;
+    transform: skewY(-3deg);
+    margin-top: 5px;
+    margin-bottom: 30px;
+}
+
+.titulo-main h2 {
+    transform: skewY(3deg);
+}
+
+
+/* aca comienza main del acceso comercios*/
+.body-acceso{
+    height: 100vh;
+}
+
+#main-acceso{
+    padding: 10px 0 0 0;
+    display: block;
+    justify-content: center;
+}
 .acceso-form{
-    width: 20rem;
-    height: 20rem;
-    background-color: #979797;
-    margin-top: 50px;
+    width: 100%;
+    margin-top: 100px;
+    margin-bottom: 100px;
     margin-left: auto;
     margin-right: auto;
-    border-radius: 5%;
-    border-color: solid #b0b0b0 ;
     justify-items: center;
     align-content: center;
-    box-shadow: 0 4px 8px #1c7aec
+    background-color: var(--color-4);
+    transform: skewY(-3deg);
 }
 
 .input-form{
     display: flex;
     flex-direction: column;
     align-items: center;
+    transform: skewY(3deg);
 }
 .acceso-form input{
     margin: 20px;
@@ -248,18 +309,23 @@ color: #ffffff;
 }
 .acceso-form input[type="submit"] {
 background-color: #1c7aec;
-color: #ffffff;
+color: var(--color-7);
 padding: 10px 20px;
 border-radius: 5px;
 margin-top: 30px;
 }
 
 .acceso-form a {
-    color: #f4f5f0;
+    color: var(--color-7);
     text-decoration: underline;
     font-size: .7rem;
 }
 
+.footer-acceso{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
 /* aca comienza main del acceso*/
 
 .contacto-form input[type="submit"] {
@@ -287,11 +353,11 @@ margin-top: 30px;
 #list li {
     cursor: pointer;
     padding: 10px;
-    background-color: #a6f18f;
+    background-color: #a3aa9f;
     margin-bottom: 5px;
 }
 #list li:hover {
-    background-color: #4fd38a;
+    background-color: #121c16;
 }
 #list a{
     color:#ffffff;
@@ -299,9 +365,6 @@ margin-top: 30px;
 }
 /* aca comienza footer*/
 
-footer{
-    background-color: #a6f18f;
-}
 
 footer a {
 color: black;
@@ -311,13 +374,13 @@ font-weight: bold;
 .footer{
     display: flex;
     justify-content: space-between;
-    background-color: #a6f18f;
     padding: 10px;
 }
 
 .texto-footer{
     width: 50%;
     padding: 10px;
+    text-align: right;
 }
 
 .derechos.footer{
@@ -328,7 +391,7 @@ font-weight: bold;
     width: 25%;
     display: flex;
     align-items: center;
-    justify-content: right;
+    justify-content: left;
     
 }
 
