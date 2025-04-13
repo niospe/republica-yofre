@@ -15,53 +15,38 @@
     <!-- Cargar Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"><!-- iconos bootstrap -->
 
 
 </head>
 <body>
-    <header id="header">
-        <nav class="top-header">
+    <header class="header-pages">
+        
 
+        <nav class="top-header responsive-widht">
             <div class="logo-yofre">
                 <a href="../index.html" >
-                <img src="/images/logo-yofre.png" alt="Logo-Yofre" height="100px">  
-                </a>
+                    <img src="../images/logo-yofre.png" alt="Logo-Yofre" height="100px"></a>
             </div>
 
+                
             <div class="buscador">
-                <form action="/buscar" method="get">
+                <form  action="/buscar" method="get">
                     <input type="text" name="q" placeholder="¿Qué estás buscando?" aria-label="Buscar">
                     <button type="submit">
                         <i class="fas fa-search"></i> <!-- Ícono de lupa de Font Awesome -->
                     </button>
                 </form>
             </div>
-
-            <div>
-            <a class="acceso" href="acceso.html">Tengo Comercio</a> 
+            <div> 
+                <a class="link-menu" href="catalogo.html">Catálogo</a>
             </div>
-
-        </nav> 
-
-        <!-- Aca comienza la barra de links-->
-        <nav class="barra-nav">
-            <ul class="menu">
-                <ul><a href="">Categorías</a>
-                    <ul class="submenu">
-                        <ul><a href="">Ropa</a>
-                            <li><a href="">Mujer</a></li>
-                            <li><a href="">Hombres</a></li>
-                            <li><a href="">Niños</a></li>
-                        </ul>
-                        <ul><a href="">Comestibles</a></ul>
-                        <ul><a href="">Regalería</a></ul>
-                        <ul><a href="">Hogar</a></ul>
-                    </ul>
-                </ul>
-                <ul><a href="catalogo.html">Catálogo</a></ul>
-                <ul><a href="comercios.html">Comercios</a></ul>
-                <ul><a href="preguntas.html">Preguntas Frecuentes</a></ul>
-            </ul>
+            <div>
+                <a class="link-menu" href="comercios.html">Comercios</a>
+            </div>
+            <div>
+                <a class="acceso" href="#">Tengo Comercio</a> 
+            </div>
         </nav>
     
     </header>
@@ -75,18 +60,102 @@
             <h2>Preguntas frecuentes</h2>
         </section>
     
+        <section class="texto-preguntas responsive-widht">
+           <p><h5>¿Qué es REPUBLICA YOFRE?</h5>
+            Es una plataforma web y móvil que brinda el servicio de publicación y visualización de avisos de productos ofrecidos por locales ubicados en el Centro Comercial del Barrio Yofre Norte y zonas cercanas de Córdoba Capital, Argentina.<br>
+            <br>
+            <h5>¿Cómo hago para comprar?</h5>
+            A través de la plataforma podés buscar productos que te interesen y contactarte con los vendedores, para coordinar directamente con ellos la compra y el envío, o bien, visitar el local presencialmente.<br>
+            
+            ¡Es muy fácil!<br>
+            1. Elegí el rubro que te interesa, o si estás indeciso/a, podés ver todas las publicaciones juntas.<br>
+            2. Filtrá según tus preferencias (mayorista o minorista, si hace envíos, si acepta tarjeta, etc) y ordenalas como quieras.<br>
+            3. Tocá la publicación que te interese para ver el detalle del producto (precio, más fotos, talles, colores, etc) y del vendedor (ubicación del local, horarios de atención y las formas de comunicarse)<br>
+            4. Contactá al vendedor por whatsapp, o sino, podés ir directamente al local. Como vos prefieras<br>
+            <br>
+            <h5>¿Cuánto cuesta usar la aplicación?</h5>
+        
+            ¡Nada!<br>
+            <br>
+            <h5>¿Cualquiera puede publicar sus productos en la app?</h5>
+            No!! Solamente pueden publicar los vendedores que superen las validaciones que realizamos y que obtengan una cuenta aprobada por REPUBLICA YOFRE<br>
+            <br>
+            <h5>Soy del interior, ¿puedo usar la aplicación? ¿Hacen envíos?</h5>
+            ¡La idea es que puedas ver las publicaciones dónde y cuándo quieras!<br>
+            - Si tenés pensado ir al centro comercial de Yofre, aprovechá y anticipate viendo los productos que vas a encontrar.<br>
+            - Si en cambio querés comprar sin tener que viajar, podés ver los productos desde donde estés y contactarte con el vendedor para arreglar la compra y el envío.<br>
+            <br>
+            <h5>¿Los precios son mayoristas o minoristas?</h5>
+            Cada local publica el precio de sus productos según la forma en la que trabajen. Generalmente en la publicación se indica si el precio es mayorista o minorista.<br>
+            Si es mayorista, se suele aclarar cuál es la cantidad mínima, si es posible comprar por unidad y a qué precio.<br>
+            <br>
+            <h5>¿Los precios están actualizados?</h5>
+            Constantemente alentamos a los vendedores a que mantengan sus publicaciones actualizadas, pero como depende de ellos, no tenemos forma de garantizarlo.<br>
+            Por eso recomendamos que SIEMPRE consultes el precio con el vendedor antes de hcer una compra.<br>
+            <br>
+            <h5>¿Los locales y los productos son reales?</h5>
+            Hacemos nuestro mejor esfuerzo para que sólo publiquen locales REALES.
+            Para ello, tenemos un proceso de admisión previo a la publicación, y un canal abierto para recibir denuncias, quejas y sugerencias de los compradores.<br>
+            Si un local brinda un mal servicio, es inmediatamente expulsado de la plataforma<br>
+            <br>
+            Fui a un local que encontré en la aplicación pero no existe. ¿Qué hago?<br>
+            Como seguramente se trata de una excepción, te pedimos que por favor te contactes con nosotros a través del menú "Contactanos" para que veamos el caso. Probablemente sea un local que se mudó a otra dirección y se olvidó actualizar su perfil en la app.<br>
+            <br>
+            <h5>¿Hay alguna garantía de que los locales me van a cumplir?</h5><br>
+            Si bien nuestra plataforma toma muchos recaudos para rechazar posibles locales “falsos” y reducir riesgos, lo cierto es que, como no somos intermediarios, no podemos garantizar que los locales cumplan con lo acordado en la totalidad de los casos.<br>
+            Por eso, te sugerimos adoptar las medidas de seguridad razonables de toda compra online.<br>
+            De todos modos, como nos sentimos parte de la comunidad del centro comercial de Flores y queremos que todos/as puedan hacer sus compras sin problemas, quedamos a disposición de nuestros usuarios para ayudar en lo que esté a nuestro alcance para resolver sus inconvenientes.<br>
+            <br>
+            <h5>¿Qué medidas de seguridad adicionales me sugieren adoptar en mi compra?</h5>
+            Primero que todo, asegurate que sea un local confiable. Para eso tenés distintas formas:<br>
+            1. Pedíle al vendedor su perfil en Facebook e Instagram, fijate que tenga publicaciones, amigos/seguidores, comentarios, y que la ubicación sea la misma que figura en la app.<br>
+            2. Pedile foto del local desde afuera del mismo.<br>
+            3. Si te genera muchas dudas, pedile algún comprobante que verifique que el local es real: boleta de pago de un impuesto, folleto, tarjeta comercial, DNI, etc.<br>
+            4. También podés contactarnos desde la app y pedirnos más info, así te contamos si recibimos buenas referencias de otros compradores.<br>
+            <br>
+            <h5>¿De qué cosas deberías sospechar?</h5>
+            - Si te pide que le pagues con una recarga de celular<br>
+            - Si el vendedor se niega a dar referencias<br>
+            
+            <br>
+            <h5>¿Qué son los "Locales Virtuales" o "Solo venta online"?</h5>
+            Son locales que, sin tener una ubicación física en Yofre para la atención presencial, están habilitados para publicar sus productos y ofertas en REPUBLICA YOFRE y así vender de forma online.<br>
+        
+            Los titulares o responsables de los Locales Virtuales son fabricantes o mayoristas con amplia experiencia en el rubro, buenos antecedentes y especialización en productos similares a los que se suelen encontrar en el Centro Comercial.<br>
+            <br>
+            <h5>¡La aplicación está muy buena! ¿Cómo puedo ayudar?</h5>
+            Dedicamos mucho esfuerzo para que la aplicación sea lo más útil posible y que la comunidad de usuarios siga creciendo. Cuantos más compradores haya, más vendedores se van a sumar y publicar sus productos.<br>
+            Por eso agradeceríamos mucho que recomiendes la aplicación a tus conocidos y locales que aún no estén registrados, compartas los posteos que subimos a nuestra cuenta de Facebook e Instagram, y nos califiques con 5 estrellas en Google Play.<br>
+            Además nos encanta recibir consejos y recomendaciones de qué funcionalidades estaría bueno incorporar, y que nos avisen si aparece algún posible error.</p>
+        </section>
     </main>
 
 
     <!-- Aca comienza el pie -->
-    <footer id="footer">
-        <p>En este sitio gratuito conectarás con comercios de Yofre Norte, calle Altoguirre y zonas cercanas.
-        Accedé al catálogo con miles de productos y diversas categorías. 
-        </p>
-        <p>Si tenés consultas podés pasar por las <a href="preguntas.html">Preguntas Frecuentes</a>.
-        Por otras dudas o sugerencias podés <a href="contacto.html">contactarnos</a> o enviarnos un e-mail a <a href="mailto:info@republicadeyofre.com">info@republicadeyofre.com</a>
-
-        </p>
+   
+    <footer id="footer" class="footesr-acceso">
+        <section class="footer responsive-widht">
+            <section class="redes-footer">
+                <a href="https://www.instagram.com/" target="_blank"><i class="bi bi-instagram"></i></a>
+                <a href="https://www.tiktok.com/" target="_blank"><i class="bi bi-tiktok"></i></a>
+                <a href="https://www.x.com/" target="_blank"><i class="bi bi-twitter-x"></i></a>
+                
+            </section>
+            <section class="derechos-footer"></section>
+            <section class="texto-footer">
+                <p>En este sitio gratuito conectarás con comercios de Yofre Norte, calle Altoguirre y zonas cercanas.
+                </p>
+                <br>
+                <p>Accedé al catálogo con miles de productos y diversas categorías. 
+                </p>
+                <br>
+                <p>Si tenés consultas podés pasar por las <a href="preguntas.html">Preguntas Frecuentes</a>.
+                </p>
+                <br>
+                <p>Por otras dudas o sugerencias podés <a href="contacto.html">contactarnos</a> o enviarnos un e-mail a <a href="mailto:info@republicadeyofre.com">info@republicadeyofre.com</a>
+                </p>
+            </section>
+        </section>
     </footer>
 </body>
 </html>

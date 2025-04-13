@@ -15,92 +15,94 @@
     <!-- Cargar Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"><!-- iconos bootstrap -->
 
 </head>
 <body>
-    <header id="header">
-        <nav class="top-header">
+    <header class="header-pages">
+        
 
+        <nav class="top-header responsive-widht">
             <div class="logo-yofre">
                 <a href="../index.html" >
-                <img src="/images/logo-yofre.png" alt="Logo-Yofre" height="100px">  
-                </a>
+                    <img src="../images/logo-yofre.png" alt="Logo-Yofre" height="100px"></a>
             </div>
 
+                
             <div class="buscador">
-                <form action="/buscar" method="get">
+                <form  action="/buscar" method="get">
                     <input type="text" name="q" placeholder="¿Qué estás buscando?" aria-label="Buscar">
                     <button type="submit">
                         <i class="fas fa-search"></i> <!-- Ícono de lupa de Font Awesome -->
                     </button>
                 </form>
             </div>
-
-            <div>
-            <a class="acceso" href="acceso.html">Tengo Comercio</a> 
+            <div> 
+                <a class="link-menu" href="catalogo.html">Catálogo</a>
             </div>
-
-        </nav> 
-
-        <!-- Aca comienza la barra de links-->
-        <nav class="barra-nav">
-            <ul class="menu">
-                <ul><a href="">Categorías</a>
-                    <ul class="submenu">
-                        <ul><a href="">Ropa</a>
-                            <li><a href="">Mujer</a></li>
-                            <li><a href="">Hombres</a></li>
-                            <li><a href="">Niños</a></li>
-                        </ul>
-                        <ul><a href="">Comestibles</a></ul>
-                        <ul><a href="">Regalería</a></ul>
-                        <ul><a href="">Hogar</a></ul>
-                    </ul>
-                </ul>
-                <ul><a href="catalogo.html">Catálogo</a></ul>
-                <ul><a href="comercios.html">Comercios</a></ul>
-                <ul><a href="preguntas.html">Preguntas Frecuentes</a></ul>
-            </ul>
+            <div>
+                <a class="link-menu" href="comercios.html">Comercios</a>
+            </div>
+            <div>
+                <a class="acceso" href="acceso.html">Tengo Comercio</a> 
+            </div>
         </nav>
     
     </header>
     <!-- Aca termina el encabezado-->
 
 
-    <main id="main">
+    <main id="main-acceso" class="form-main">
     <section>
+        <section class="titulo-main">
+            <h2>Formulacio de Contacto</h2>
+        </section>
 
-        <h1>Formulario de Contacto</h1>
+        <section class="contacto-form">
 
-        <form class="contacto-form" action="submit.html" method="post">
-            <label for="nombre">Nombre</label>
-            <input type="text" name="nombre" id="nombre">
+        <form class="contacto-form-inputs" action="submit.html" method="post">
+            <label for="nombre"></label>
+            <input type="text" name="nombre" id="nombre" placeholder="Nombre">
 
-            <label for="telefono">Teléfono</label>
-            <input type="number" name="telefono" id="telefono">
+            <label for="telefono"></label>
+            <input type="number" name="telefono" id="telefono" placeholder="Teléfono">
 
-            <label for="email">E-mail</label>
-            <input type="email" name="email" id="email">
+            <label for="email"></label>
+            <input type="email" name="email" id="email" placeholder="E-mail">
 
-            <label for="mensaje">Consulta o Sugerencia</label>
-            <textarea name="mensaje" id="mensaje"></textarea>
+            <label for="mensaje"></label>
+            <textarea name="mensaje" id="mensaje" placeholder="Consulta o Sugerencia"></textarea>
 
             <input type="submit" value="Enviar">
 
         </form>
-
+        </section>
     </section>
-
+    </main>
     <!-- Aca comienza el pie -->
-    <footer id="footer">
-        <p>En este sitio gratuito conectarás con comercios de Yofre Norte, calle Altoguirre y zonas cercanas.
-        Accedé al catálogo con miles de productos y diversas categorías. 
-        </p>
-        <p>Si tenés consultas podés pasar por las <a href="preguntas.html">Preguntas Frecuentes</a>.
-        Por otras dudas o sugerencias podés <a href="contacto.html">contactarnos</a> o enviarnos un e-mail a <a href="mailto:info@republicadeyofre.com">info@republicadeyofre.com</a>
-
-        </p>
+    <footer id="footer" class="footer-acceso">
+        <section class="footer responsive-widht">
+            <section class="redes-footer">
+                <a href="https://www.instagram.com/" target="_blank"><i class="bi bi-instagram"></i></a>
+                <a href="https://www.tiktok.com/" target="_blank"><i class="bi bi-tiktok"></i></a>
+                <a href="https://www.x.com/" target="_blank"><i class="bi bi-twitter-x"></i></a>
+                
+            </section>
+            <section class="derechos-footer"></section>
+            <section class="texto-footer">
+                <p>En este sitio gratuito conectarás con comercios de Yofre Norte, calle Altoguirre y zonas cercanas.
+                </p>
+                <br>
+                <p>Accedé al catálogo con miles de productos y diversas categorías. 
+                </p>
+                <br>
+                <p>Si tenés consultas podés pasar por las <a href="preguntas.html">Preguntas Frecuentes</a>.
+                </p>
+                <br>
+                <p>Por otras dudas o sugerencias podés <a href="contacto.html">contactarnos</a> o enviarnos un e-mail a <a href="mailto:info@republicadeyofre.com">info@republicadeyofre.com</a>
+                </p>
+            </section>
+        </section>
     </footer>
 </body>
 </html>
