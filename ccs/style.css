@@ -486,8 +486,6 @@ font-weight: bold;
 
 
 @media screen and (max-width: 576px) {
-    
-   
 
     .top-headindex{
         display: grid;
@@ -503,7 +501,7 @@ font-weight: bold;
     .menu {grid-area: main;}
     
 
-    }
+    
     .logo-yofre img{
         display: flex;
         justify-content: center;
