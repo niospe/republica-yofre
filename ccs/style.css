@@ -495,31 +495,38 @@ font-weight: bold;
         grid-template-rows: 80px 50px;
         grid-template-areas: 
         "header aside aside"
-        "main nav sidebar"
+        "main main main"
         ;
     }
     .logo-yofre {grid-area: header;}
     .buscador {grid-area: aside;}
     .menu {grid-area: main;}
     
-    .logo-yofre img{
-        width:auto ;
-        height: auto;
+
     }
-    .logo-yofre{
+    .logo-yofre img{
         display: flex;
         justify-content: center;
         align-items: center;
-        padding-top: 5px;
+        max-width: 100%;
+        height: auto;
+        object-fit: cover;
     }
-
+    .buscador form{
+        display: flex;
+        justify-content: center;
+    }
     .buscador input[type="text"] {
         font-size: .8em;
         width: 60%;
     }
-    
+    .menu{
+        display: flex;
+        justify-content: space-around;
+    }
     
     .buscador button {
+        padding: 10px;
         font-size: .8rem;
     }
 
