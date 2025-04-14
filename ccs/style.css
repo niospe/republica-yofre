@@ -5,11 +5,12 @@
 :root{
     --color-1: #4fd38a;
     --color-2: #a6f18f;
-    --color-3: #d14018;
-    --color-4: #932d11;
+    --color-3: #ff97d9;
+    --color-4: #e44f9c;
     --color-5: #acacac;
     --color-6: #979797;
     --color-7: #f4f5f0;
+    --color-8: #ff69b4;
 }
 
 /* Estilos básicos para el menú */
@@ -37,7 +38,7 @@ font-weight: bold;
     font-size: 1.2rem;
 }
 
-.top-header-index{
+.top-headindex{
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -49,7 +50,7 @@ font-weight: bold;
 .buscador input[type="text"] {
     padding: 10px;
     font-size: 1rem;
-    border: 2px solid #d14018;
+    border: 2px solid var(--color-4);
     border-radius: 4px 0 0 4px; /* Bordes redondeados solo a la izquierda */
     width: 200px;
     outline: none;
@@ -57,27 +58,27 @@ font-weight: bold;
     background-color: var(--color-2);
 }
 .buscador input::placeholder {
-    color: var(--color-3)
+    color: var(--color-4)
 }
 
 .buscador button {
     padding: 10px 15px;
     font-size: 1rem;
     border: none;
-    background-color: var(--color-3);
+    background-color: var(--color-4);
     color: var(--color-7);
     border-radius: 0 4x 4px 0; /* Bordes redondeados solo a la derecha */
     cursor: pointer;
 }
 .buscador button:hover {
-    background-color: var(--color-4);
+    background-color: var(--color-3);
 }
 
 /* Acá configuracion del Acceso de Comercios */
 
 .acceso{
     color: var(--color-7);
-    background-color: var(--color-3);
+    background-color: var(--color-4);
     padding: 5px;
     border-radius: 15px;
 }
@@ -98,7 +99,7 @@ font-weight: bold;
     text-decoration: underline;
 }
 .acceso:hover{
-    background-color: var(--color-4);
+    background-color: var(--color-3);
 }
 .menu li {
     position: relative;
@@ -244,7 +245,7 @@ h4{
 }
 
 .content-main :hover{
-    box-shadow: 5px 5px 0 0 var(--color-4), 10px 10px var(--color-3), 15px 15px 0 0 var(--color-6);
+    box-shadow: 5px 5px 0 0 var(--color-4), 10px 10px var(--color-8), 15px 15px 0 0 var(--color-3);
     transform: translate(-5px, -5px);
     background-color: var(--color-1);
 }
@@ -260,7 +261,6 @@ h4{
     height: auto;
     margin-top: 20px;
     border-radius: 5px;
-   
 }
 
 #main-catalogo{
@@ -482,4 +482,92 @@ font-weight: bold;
     background-image: linear-gradient(60deg, var(--color-1), var(--color-2));
     border-radius: 50px 50px 0px 0px ;
     width: 100%;
+}
+
+
+@media screen and (max-width: 576px) {
+    
+    body{
+        width: 100%;
+        font-family: "Encode Sans", serif;
+        background-image: linear-gradient(60deg, var(--color-1), var(--color-2));
+    }
+
+    .logo-yofre{
+        width: 100px;
+        height: auto;
+        position: absolute;
+        top: 0;
+        left: 0;
+
+    }
+    .buscador{
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin: 20px;
+    }
+    .top-headindex{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: .5rem;
+        margin: 10;
+        padding: 10;
+        height: 200px;
+    }
+    .video-bg {
+        position: absolute;
+        height: 60vh;
+        overflow: hidden;
+        z-index: -1;
+    }
+    
+    .video-fondo{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .main{
+        height: 40vh;   
+        display: flex;
+        justify-content: left;
+        align-items: end;
+        margin-left: 10%;
+    }
+    .footer-index{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        height: auto;
+    }
+    #footer-indexx{
+        background-image: linear-gradient(60deg, var(--color-1), var(--color-2));
+        border-radius: 50px 50px 0px 0px ;
+        width: 100%;
+    }
+
+    .texto-footer{
+        width: 90%;
+        text-align: center;
+    }
+    
+    .derechos.footer{
+        width: 100%;
+    }
+    
+    .redes-footer{
+        width: 100%;
+        padding-top: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
 }
