@@ -534,7 +534,9 @@ font-weight: bold;
         justify-content: center;
 
     }
-
+    .acceso{
+        text-align: center;
+    }
 
     .video-bg {
         position: absolute;
@@ -561,11 +563,24 @@ font-weight: bold;
     .main{
         height: 40vh;   
         display: flex;
-        justify-content: left;
-        align-items: end;
-        margin-left: 10%;
+        justify-content: center;
+        align-items: center;
+        margin: 0px;
+        width: 70%;
     }
 
+    #main-index{
+        display: flex;
+        justify-content: center;
+    }
+    
+    .texto-presentacion{
+        padding: 10px;
+        background-color: rgba(10, 10, 10, 0.8);
+        border-radius: 5px;
+        margin-left: auto;
+        margin-right: auto;
+    }
     h4{
         font-size: 2.5rem;
     }
