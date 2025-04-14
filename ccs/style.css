@@ -504,18 +504,30 @@ font-weight: bold;
     
     .logo-yofre img{
         width:auto ;
-        height: 80px;
+        height: auto;
     }
     .logo-yofre{
         display: flex;
         justify-content: center;
         align-items: center;
+        padding-top: 5px;
+    }
+
+    .buscador input[type="text"] {
+        font-size: .8em;
+        width: 60%;
+    }
+    
+    
+    .buscador button {
+        font-size: .8rem;
     }
 
     .buscador{
         display: flex;
         align-items: center;
         justify-content: center;
+
     }
 
 
@@ -538,6 +550,7 @@ font-weight: bold;
     .links{
         display: flex;
         justify-content: center;
+        font-size: 1rem;
     }
 
     .main{
