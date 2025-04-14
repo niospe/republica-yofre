@@ -487,38 +487,41 @@ font-weight: bold;
 
 @media screen and (max-width: 576px) {
     
-    body{
-        width: 100%;
-        font-family: "Encode Sans", serif;
-        background-image: linear-gradient(60deg, var(--color-1), var(--color-2));
-    }
+   
 
-    .logo-yofre{
-        width: 100px;
-        height: auto;
-        position: absolute;
-        top: 0;
-        left: 0;
-
-    }
-    .buscador{
-        position: absolute;
-        top: 0;
-        right: 0;
-        margin: 20px;
-    }
     .top-headindex{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        font-size: .5rem;
-        margin: 10;
-        padding: 10;
-        height: 200px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 80px 50px;
+        grid-template-areas: 
+        "header aside aside"
+        "main nav sidebar"
+        ;
     }
+    .logo-yofre {grid-area: header;}
+    .buscador {grid-area: aside;}
+    .menu {grid-area: main;}
+    
+    .logo-yofre img{
+        width:auto ;
+        height: 80px;
+    }
+    .logo-yofre{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .buscador{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+
     .video-bg {
         position: absolute;
-        height: 60vh;
+        height: 90vh;
         overflow: hidden;
         z-index: -1;
     }
@@ -532,6 +535,11 @@ font-weight: bold;
         object-fit: cover;
     }
     
+    .links{
+        display: flex;
+        justify-content: center;
+    }
+
     .main{
         height: 40vh;   
         display: flex;
@@ -539,6 +547,11 @@ font-weight: bold;
         align-items: end;
         margin-left: 10%;
     }
+
+    h4{
+        font-size: 2.5rem;
+    }
+
     .footer-index{
         display: flex;
         flex-direction: column-reverse;
