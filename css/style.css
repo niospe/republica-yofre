@@ -209,7 +209,7 @@ footer a {
 
 /* aca comienza main del index*/
 .video-bg {
-  position: re;
+  position: absolute;
   width: 100%;
   height: 95vh;
   overflow: hidden;
@@ -587,7 +587,7 @@ footer a {
 }
 
 .acceso-form input[type=submit] {
-  background-color: var(--color-5);
+  background-color: var(--color-7);
   color: var(--color-3);
   padding: 10px 20px;
   border-radius: 25px;
@@ -628,8 +628,11 @@ footer a {
   .buscador {
     grid-area: aside;
   }
-  .menu {
+  .links {
     grid-area: main;
+  }
+  .video-recorrido {
+    display: none;
   }
   .logo-yofre img {
     display: flex;
@@ -647,10 +650,6 @@ footer a {
     font-size: 0.8em;
     width: 60%;
   }
-  .menu {
-    display: flex;
-    justify-content: space-around;
-  }
   .buscador button {
     padding: 10px;
     font-size: 0.8rem;
@@ -663,54 +662,19 @@ footer a {
   .acceso {
     text-align: center;
   }
-  .video-bg {
-    position: absolute;
-    height: 90vh;
-    overflow: hidden;
-    z-index: -1;
-  }
-  .video-fondo {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
   .links {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     font-size: 1rem;
+    width: 100%;
   }
-  .main {
-    height: 40vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0px;
-    width: 70%;
-  }
-  #main-index {
-    display: flex;
-    justify-content: center;
-  }
-  .texto-presentacion {
-    padding: 10px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  h4 {
-    font-size: 2.5rem;
-  }
-  .footer-index {
+  .footer {
     display: flex;
     flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
-    padding: 10px;
+    padding: 0px;
     height: auto;
-  }
-  #footer-indexx {
     background-image: linear-gradient(60deg, var(--color-1), var(--color-2));
     border-radius: 50px 50px 0px 0px;
     width: 100%;
@@ -718,13 +682,14 @@ footer a {
   .texto-footer {
     width: 90%;
     text-align: center;
+    padding: 15px;
   }
   .derechos.footer {
-    width: 100%;
+    width: 90%;
   }
   .redes-footer {
-    width: 100%;
-    padding-top: 20px;
+    width: 90%;
+    padding-bottom: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
