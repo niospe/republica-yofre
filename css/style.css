@@ -575,6 +575,10 @@ footer a {
   border-radius: 30px;
 }
 
+.links {
+  width: 40%;
+}
+
 .input-form {
   display: flex;
   flex-direction: column;
