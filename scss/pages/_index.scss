@@ -83,7 +83,10 @@
     .buscador {grid-area: aside;}
     .links {grid-area: main;}
     
-
+    .menu li:hover > .submenu {
+        display: none;
+        
+    }
     
     .logo-yofre img{
         display: flex;
@@ -150,6 +153,8 @@
         align-items: center;
         margin: 0px;
         width: 70%;
+        margin-bottom: 50px ;
+        margin-top: 50px;
     }
 
     #main-index{
