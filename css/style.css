@@ -1,0 +1,617 @@
+@charset "UTF-8";
+* {
+  padding: O;
+  margin: 0;
+}
+
+:root {
+  --color-1: #4fd38a;
+  --color-2: #a6f18f;
+  --color-3: #ff97d9;
+  --color-4: #e44f9c;
+  --color-5: #acacac;
+  --color-6: #979797;
+  --color-7: #f4f5f0;
+  --color-8: #ff69b4;
+  --color-9: rgba(0, 0, 0, 0.8);
+}
+
+body {
+  font-family: "Encode Sans", serif;
+  background-image: var(--color-7);
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-7);
+  font-weight: bold;
+}
+
+h4 {
+  color: var(--color-7);
+  font-size: 4rem;
+}
+
+.header-pages {
+  justify-content: space-around;
+  background-image: linear-gradient(60deg, var(--color-1), var(--color-2));
+}
+
+header {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0), var(--color-9));
+}
+
+.top-header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 1.2rem;
+}
+
+/* configuración buscador*/
+.buscador input[type=text] {
+  padding: 10px;
+  font-size: 1rem;
+  border: 2px solid var(--color-4);
+  border-radius: 4px 0 0 4px; /* Bordes redondeados solo a la izquierda */
+  width: 200px;
+  outline: none;
+  color: var(--color-3);
+  background-color: var(--color-2);
+}
+
+.buscador input::placeholder {
+  color: var(--color-4);
+}
+
+.buscador button {
+  padding: 10px 15px;
+  font-size: 1rem;
+  border: none;
+  background-color: var(--color-4);
+  color: var(--color-7);
+  border-radius: 0 4x 4px 0; /* Bordes redondeados solo a la derecha */
+  cursor: pointer;
+}
+
+.buscador button:hover {
+  background-color: var(--color-3);
+}
+
+/* Acá configuracion del Acceso de Comercios */
+.acceso {
+  color: var(--color-7);
+  background-color: var(--color-4);
+  padding: 5px;
+  border-radius: 15px;
+}
+
+/* Acá comienzas la configuración del menu de categorias y navegacion */
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: flex-start;
+  z-index: 9999;
+}
+
+.link-menu:hover {
+  text-decoration: underline;
+}
+
+.acceso:hover {
+  background-color: var(--color-3);
+}
+
+.menu li {
+  position: relative;
+}
+
+.menu li a {
+  display: block;
+  color: var(--color-7);
+  text-decoration: none;
+}
+
+/* Submenú (oculto por defecto) */
+.submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+  min-width: 100px;
+  z-index: 9998;
+}
+
+.submenu li a {
+  padding-top: 25px;
+  color: var(--color-7);
+}
+
+.submenu li a:hover {
+  text-decoration: underline;
+}
+
+/* Mostrar submenú al pasar el mouse */
+.menu li:hover > .submenu {
+  display: block;
+  background-color: var(--color-9);
+}
+
+/* Submenú anidado (subcategorías) */
+.submenu .submenu {
+  padding-left: 15px;
+  left: 100%;
+  top: 0;
+}
+
+.main {
+  height: 70vh;
+  display: flex;
+  justify-content: left;
+  align-items: end;
+  margin-left: 15%;
+}
+
+.responsive-widht {
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* aca comienza footer*/
+footer a {
+  color: black;
+  font-weight: bold;
+}
+
+.footer {
+  background-color: var(--color-1);
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-radius: 50px 50px 0px 0px;
+  padding-top: 35px;
+  margin-bottom: 0px;
+}
+
+.texto-footer {
+  width: 50%;
+  padding: 10px;
+  text-align: right;
+}
+
+.derechos.footer {
+  width: 25%;
+}
+
+.redes-footer {
+  width: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+
+.redes-footer i {
+  margin: 10px;
+}
+
+.top-headindex {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 1.2rem;
+}
+
+/* aca comienza main del index*/
+.video-bg {
+  position: absolute;
+  width: 100%;
+  height: 95vh;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.video-fondo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Aca comienza el MAIN del index */
+#main-index {
+  padding: 10px 0 0 0;
+  display: block;
+  justify-content: center;
+}
+
+.texto-presentacion p {
+  color: var(--color-7);
+  font-size: 1rem;
+  text-align: left;
+  letter-spacing: 2px;
+  margin-bottom: 60px;
+}
+
+.texto-presentacion {
+  background-color: var(--color-9);
+  border-radius: 30px;
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+/* Aca comienza el FOOTER del index */
+.footer-index {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  padding-top: 30px;
+  height: auto;
+}
+
+#footer-indexx {
+  padding-top: 50px;
+  background-image: linear-gradient(60deg, var(--color-1), var(--color-2));
+  border-radius: 50px 50px 0px 0px;
+  width: 100%;
+}
+
+/* Aca comienza el Responsive MOVIL del index */
+@media screen and (max-width: 576px) {
+  .top-headindex {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 80px 50px;
+    grid-template-areas: "header aside aside" "main main main";
+  }
+  .logo-yofre {
+    grid-area: header;
+  }
+  .buscador {
+    grid-area: aside;
+  }
+  .menu {
+    grid-area: main;
+  }
+  .logo-yofre img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  .buscador form {
+    display: flex;
+    justify-content: center;
+  }
+  .buscador input[type=text] {
+    font-size: 0.8em;
+    width: 60%;
+  }
+  .menu {
+    display: flex;
+    justify-content: space-around;
+  }
+  .buscador button {
+    padding: 10px;
+    font-size: 0.8rem;
+  }
+  .buscador {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .acceso {
+    text-align: center;
+  }
+  .video-bg {
+    position: absolute;
+    height: 90vh;
+    overflow: hidden;
+    z-index: -1;
+  }
+  .video-fondo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .links {
+    display: flex;
+    justify-content: center;
+    font-size: 1rem;
+  }
+  .main {
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    width: 70%;
+  }
+  #main-index {
+    display: flex;
+    justify-content: center;
+  }
+  .texto-presentacion {
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  h4 {
+    font-size: 2.5rem;
+  }
+  .footer-index {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    height: auto;
+  }
+  #footer-indexx {
+    background-image: linear-gradient(60deg, var(--color-1), var(--color-2));
+    border-radius: 50px 50px 0px 0px;
+    width: 100%;
+  }
+  .texto-footer {
+    width: 90%;
+    text-align: center;
+  }
+  .derechos.footer {
+    width: 100%;
+  }
+  .redes-footer {
+    width: 100%;
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+/* aca comienza main del acceso comercios*/
+.body-acceso {
+  height: 100vh;
+}
+
+#main-acceso {
+  padding: 10px 0 0 0;
+  display: block;
+  justify-content: center;
+}
+
+.acceso-form {
+  width: 70%;
+  height: 60vh;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  justify-items: center;
+  align-content: center;
+  background-image: linear-gradient(60deg, var(--color-3), var(--color-4));
+  border-radius: 30px;
+}
+
+.input-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.acceso-form input {
+  margin: 20px;
+  font-size: 1rem;
+  padding: 10px;
+}
+
+.acceso-form input[type=submit] {
+  background-color: var(--color-7);
+  color: var(--color-3);
+  padding: 10px 20px;
+  border-radius: 25px;
+  margin-top: 30px;
+  font-weight: bold;
+}
+
+.acceso-form {
+  display: flex;
+  padding: 20px;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.video-recorrido {
+  height: 80%;
+  width: auto;
+  border-radius: 20px;
+}
+
+.acceso-form a {
+  color: var(--color-7);
+  text-decoration: underline;
+  font-size: 0.7rem;
+}
+
+/* aca comienza main del catalogo*/
+.titulo-main h2 {
+  color: var(--color-7);
+  text-align: center;
+  padding: 10px 20px;
+}
+
+.titulo-main {
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  border-radius: 0px;
+  background-color: #a6f18f;
+}
+
+.content-main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+  border-color: 2px white;
+}
+
+.categoria-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 4px;
+  width: 25%;
+  height: auto;
+  padding: 20px;
+  margin: 10px;
+  transition: all 300ms;
+  border: 1.5px solid var(--color-1);
+  background-color: var(--color-2);
+}
+
+.categoria-main a {
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.content-main :hover {
+  box-shadow: 5px 5px 0 0 var(--color-4), 10px 10px var(--color-8), 15px 15px 0 0 var(--color-3);
+  transform: translate(-5px, -5px);
+  background-color: var(--color-1);
+}
+
+.categoria-main :hover {
+  box-shadow: none;
+  transform: translate(0px, 0px);
+}
+
+.content-main img {
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+
+#main-catalogo {
+  min-height: 80vh;
+  display: block;
+  justify-content: center;
+}
+
+.titulo-main {
+  background-image: linear-gradient(60deg, var(--color-3), var(--color-4));
+  margin-top: 5px;
+  margin-bottom: 30px;
+}
+
+/* comienza main de los comercios*/
+.main-comercios {
+  width: 100%;
+  height: 80vh;
+}
+
+#map {
+  height: 70vh; /* Altura del mapa */
+  width: 80%; /* Ancho del mapa */
+  border-radius: 30px;
+}
+
+#container {
+  display: flex;
+  margin: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#list {
+  width: 30%;
+  margin-right: 20px;
+  max-height: 70vh;
+  overflow: auto;
+}
+
+#list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#list li {
+  margin-top: 20px;
+  cursor: pointer;
+  padding: 10px;
+  margin-bottom: 5px;
+}
+
+#list li:hover {
+  background-color: var(--color-1);
+  border-radius: 10px;
+}
+
+#list a {
+  color: #ffffff;
+  background-color: #4fd38a;
+  padding: 5px;
+}
+
+/* Main de Contato */
+.contacto-form-inputs {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 40%;
+}
+
+.contacto-form-inputs input {
+  margin: 20px;
+  font-size: 1rem;
+  padding: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#mensaje {
+  height: 200px;
+}
+
+.contacto-form-inputs input[type=submit] {
+  background-color: var(--color-7);
+  color: var(--color-3);
+  padding: 10px 20px;
+  border-radius: 25px;
+  margin-top: 30px;
+  font-weight: bold;
+}
+
+.contacto-form {
+  width: 70%;
+  height: 60vh;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  justify-items: center;
+  align-content: center;
+  background-image: linear-gradient(60deg, var(--color-3), var(--color-4));
+  border-radius: 30px;
+}
+
+/* Main preguntas */
+.texto-preguntas {
+  color: var(--color-6);
+  padding: 20px;
+}
+
+/*# sourceMappingURL=style.css.map */

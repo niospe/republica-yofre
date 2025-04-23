@@ -1,0 +1,74 @@
+/* aca comienza main del catalogo*/
+.titulo-main h2{
+    color: var(--color-7);
+    text-align: center;
+    padding: 10px 20px;
+}
+
+.titulo-main{
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    border-radius: 0px;
+    background-color: #a6f18f;
+}
+
+.content-main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+    border-color: 2px white;
+}
+
+.categoria-main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 4px;
+    width: 25%;
+    height: auto;
+    padding: 20px;
+    margin: 10px;
+    transition: all 300ms;
+    border: 1.5px solid var(--color-1);
+    background-color: var(--color-2);
+}
+
+.categoria-main a{
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.content-main :hover{
+    box-shadow: 5px 5px 0 0 var(--color-4), 10px 10px var(--color-8), 15px 15px 0 0 var(--color-3);
+    transform: translate(-5px, -5px);
+    background-color: var(--color-1);
+}
+
+.categoria-main :hover {
+    box-shadow: none;
+    transform: translate(0px, 0px);
+    
+}
+
+.content-main img{
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+#main-catalogo{
+    min-height: 80vh;
+    display: block;
+    justify-content: center;
+}
+
+.titulo-main{
+    background-image: linear-gradient(60deg, var(--color-3),var(--color-4));
+    margin-top: 5px;
+    margin-bottom: 30px;
+}

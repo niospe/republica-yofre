@@ -1,0 +1,120 @@
+.header-pages {
+    justify-content: space-around;
+    background-image: linear-gradient(60deg, var(--color-1), var(--color-2));
+}
+    
+header{
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0), var(--color-9) );
+}
+
+.top-header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+
+/* configuración buscador*/
+
+
+.buscador input[type="text"] {
+    padding: 10px;
+    font-size: 1rem;
+    border: 2px solid var(--color-4);
+    border-radius: 4px 0 0 4px; /* Bordes redondeados solo a la izquierda */
+    width: 200px;
+    outline: none;
+    color: var(--color-3);
+    background-color: var(--color-2);
+}
+.buscador input::placeholder {
+    color: var(--color-4)
+}
+
+.buscador button {
+    padding: 10px 15px;
+    font-size: 1rem;
+    border: none;
+    background-color: var(--color-4);
+    color: var(--color-7);
+    border-radius: 0 4x 4px 0; /* Bordes redondeados solo a la derecha */
+    cursor: pointer;
+}
+.buscador button:hover {
+    background-color: var(--color-3);
+}
+
+/* Acá configuracion del Acceso de Comercios */
+
+.acceso{
+    color: var(--color-7);
+    background-color: var(--color-4);
+    padding: 5px;
+    border-radius: 15px;
+}
+
+
+/* Acá comienzas la configuración del menu de categorias y navegacion */
+
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-start;
+    z-index: 9999;
+}
+
+.link-menu:hover{
+    text-decoration: underline;
+}
+.acceso:hover{
+    background-color: var(--color-3);
+}
+.menu li {
+    position: relative;
+    
+}
+
+.menu li a {
+    display: block;
+    color: var(--color-7);
+    text-decoration: none;
+}
+
+
+/* Submenú (oculto por defecto) */
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+    min-width: 100px;
+    z-index: 9998;
+}
+
+.submenu li a {
+    padding-top: 25px;
+    color: var(--color-7);
+}
+
+.submenu li a:hover {
+    text-decoration: underline;
+}
+
+/* Mostrar submenú al pasar el mouse */
+.menu li:hover > .submenu {
+    display: block;
+    background-color: var(--color-9);
+}
+
+/* Submenú anidado (subcategorías) */
+.submenu .submenu {
+    padding-left: 15px;
+    left: 100%;
+    top: 0;
+}
