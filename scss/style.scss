@@ -1,13 +1,14 @@
-@use "layout/reset";
-@use "layout/variables";
-@use "layout/body";
-@use "layout/header";
-@use "layout/main";
-@use "layout/footer";
+@use "./layout/reset";
+@use "./layout/variables";
+@use "./layout/body";
+@use "./layout/header";
+@use "./layout/main";
+@use "./layout/footer" ;
 
-@use "pages/index";
-@use "pages/acceso";
-@use "pages/catalogo";
-@use "pages/comercios";
-@use "pages/contacto";
-@use "pages/preguntas";
+@use "./pages/index" ;
+@use "./pages/catalogo";
+@use "./pages/comercios";
+@use "./pages/contacto";
+@use "./pages/preguntas";
+@use "./pages/acceso";
+

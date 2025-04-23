@@ -209,7 +209,7 @@ footer a {
 
 /* aca comienza main del index*/
 .video-bg {
-  position: absolute;
+  position: re;
   width: 100%;
   height: 95vh;
   overflow: hidden;
@@ -379,70 +379,6 @@ footer a {
     justify-content: center;
   }
 }
-/* aca comienza main del acceso comercios*/
-.body-acceso {
-  height: 100vh;
-}
-
-#main-acceso {
-  padding: 10px 0 0 0;
-  display: block;
-  justify-content: center;
-}
-
-.acceso-form {
-  width: 70%;
-  height: 60vh;
-  margin-top: 50px;
-  margin-bottom: 30px;
-  margin-left: auto;
-  margin-right: auto;
-  justify-items: center;
-  align-content: center;
-  background-image: linear-gradient(60deg, var(--color-3), var(--color-4));
-  border-radius: 30px;
-}
-
-.input-form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.acceso-form input {
-  margin: 20px;
-  font-size: 1rem;
-  padding: 10px;
-}
-
-.acceso-form input[type=submit] {
-  background-color: var(--color-7);
-  color: var(--color-3);
-  padding: 10px 20px;
-  border-radius: 25px;
-  margin-top: 30px;
-  font-weight: bold;
-}
-
-.acceso-form {
-  display: flex;
-  padding: 20px;
-  align-items: center;
-  justify-content: space-around;
-}
-
-.video-recorrido {
-  height: 80%;
-  width: auto;
-  border-radius: 20px;
-}
-
-.acceso-form a {
-  color: var(--color-7);
-  text-decoration: underline;
-  font-size: 0.7rem;
-}
-
 /* aca comienza main del catalogo*/
 .titulo-main h2 {
   color: var(--color-7);
@@ -612,6 +548,187 @@ footer a {
 .texto-preguntas {
   color: var(--color-6);
   padding: 20px;
+}
+
+/* aca comienza main del acceso comercios*/
+.body-acceso {
+  height: 100vh;
+}
+
+#main-acceso {
+  padding: 10px 0 0 0;
+  display: block;
+  justify-content: center;
+}
+
+.acceso-form {
+  width: 70%;
+  height: 30vh;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  justify-items: center;
+  align-content: center;
+  background-image: linear-gradient(60deg, var(--color-3), var(--color-4));
+  border-radius: 30px;
+}
+
+.input-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.acceso-form input {
+  margin: 20px;
+  font-size: 1rem;
+  padding: 10px;
+}
+
+.acceso-form input[type=submit] {
+  background-color: var(--color-5);
+  color: var(--color-3);
+  padding: 10px 20px;
+  border-radius: 25px;
+  margin-top: 30px;
+  font-weight: bold;
+}
+
+.acceso-form {
+  display: flex;
+  padding: 20px;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.video-recorrido {
+  height: 80%;
+  width: auto;
+  border-radius: 20px;
+}
+
+.acceso-form a {
+  color: var(--color-7);
+  text-decoration: underline;
+  font-size: 0.7rem;
+}
+
+/* Aca comienza el Responsive MOVIL del index */
+@media screen and (max-width: 576px) {
+  .top-header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 80px 50px;
+    grid-template-areas: "header aside aside" "main main main";
+  }
+  .logo-yofre {
+    grid-area: header;
+  }
+  .buscador {
+    grid-area: aside;
+  }
+  .menu {
+    grid-area: main;
+  }
+  .logo-yofre img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  .buscador form {
+    display: flex;
+    justify-content: center;
+  }
+  .buscador input[type=text] {
+    font-size: 0.8em;
+    width: 60%;
+  }
+  .menu {
+    display: flex;
+    justify-content: space-around;
+  }
+  .buscador button {
+    padding: 10px;
+    font-size: 0.8rem;
+  }
+  .buscador {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .acceso {
+    text-align: center;
+  }
+  .video-bg {
+    position: absolute;
+    height: 90vh;
+    overflow: hidden;
+    z-index: -1;
+  }
+  .video-fondo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .links {
+    display: flex;
+    justify-content: center;
+    font-size: 1rem;
+  }
+  .main {
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    width: 70%;
+  }
+  #main-index {
+    display: flex;
+    justify-content: center;
+  }
+  .texto-presentacion {
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  h4 {
+    font-size: 2.5rem;
+  }
+  .footer-index {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    height: auto;
+  }
+  #footer-indexx {
+    background-image: linear-gradient(60deg, var(--color-1), var(--color-2));
+    border-radius: 50px 50px 0px 0px;
+    width: 100%;
+  }
+  .texto-footer {
+    width: 90%;
+    text-align: center;
+  }
+  .derechos.footer {
+    width: 100%;
+  }
+  .redes-footer {
+    width: 100%;
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
