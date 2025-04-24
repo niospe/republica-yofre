@@ -1,3 +1,7 @@
+.body-index{
+    background-color: black;
+}
+
 .top-headindex{
     display: flex;
     justify-content: space-around;
@@ -202,4 +206,23 @@
         justify-content: center;
         
     }
+}
+
+/* animaciones */
+
+#main-index {
+
+    animation: fallSequence 0.5s ease-out forwards;
+    transform: translateX(-100px);
+    opacity: 0;
+}
+
+#main-index { animation-delay: 1s; }
+
+
+@keyframes fallSequence {
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }

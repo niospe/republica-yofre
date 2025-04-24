@@ -67,8 +67,24 @@ header{
 }
 
 .link-menu:hover{
-    text-decoration: underline;
+    background-color: var(--color-4);
+    border-radius: 20px;
+    animation: background-color .5s ease
 }
+
+.submenu li a:hover {
+    @extend .link-menu,:hover;
+}
+
+.link-menu{
+    padding: 5px;
+    color: var(--color-7);
+}
+
+.submenu li a {
+    @extend .link-menu;
+}
+
 .acceso:hover{
     background-color: var(--color-3);
 }
@@ -97,19 +113,10 @@ header{
     z-index: 9998;
 }
 
-.submenu li a {
-    padding-top: 25px;
-    color: var(--color-7);
-}
-
-.submenu li a:hover {
-    text-decoration: underline;
-}
 
 /* Mostrar submenú al pasar el mouse */
 .menu li:hover > .submenu {
     display: block;
-    background-color: var(--color-9);
 }
 
 /* Submenú anidado (subcategorías) */
@@ -117,4 +124,25 @@ header{
     padding-left: 15px;
     left: 100%;
     top: 0;
+}
+
+
+/* animaciones */
+
+.logo-yofre, .buscador, .links {
+
+    animation: fallSequence 0.5s ease-out forwards;
+    transform: translateY(-50px);
+    opacity: 0;
+}
+
+.logo-yofre { animation-delay: 0.1s; }
+.buscador { animation-delay: 0.3s; }
+.links { animation-delay: 0.5s; }
+
+@keyframes fallSequence {
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }

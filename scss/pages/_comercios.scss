@@ -40,3 +40,22 @@
     background-color: #4fd38a;
     padding: 5px;
 }
+
+/* animaciones */
+
+.main-comercios {
+
+    animation: fallSequence 0.5s ease-out forwards;
+    transform: translateX(-100px);
+    opacity: 0;
+}
+
+.main-comercios { animation-delay: 1s; }
+
+
+@keyframes fallSequence {
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}

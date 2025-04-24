@@ -96,11 +96,18 @@ header {
   z-index: 9999;
 }
 
-.link-menu:hover {
-  text-decoration: underline;
+.link-menu:hover, .submenu li a:hover {
+  background-color: var(--color-4);
+  border-radius: 20px;
+  animation: background-color 0.5s ease;
 }
 
-.acceso:hover {
+.link-menu, .submenu li a, .submenu li a:hover {
+  padding: 5px;
+  color: var(--color-7);
+}
+
+.acceso:hover, .submenu li a.acceso:hover {
   background-color: var(--color-3);
 }
 
@@ -127,19 +134,9 @@ header {
   z-index: 9998;
 }
 
-.submenu li a {
-  padding-top: 25px;
-  color: var(--color-7);
-}
-
-.submenu li a:hover {
-  text-decoration: underline;
-}
-
 /* Mostrar submenú al pasar el mouse */
 .menu li:hover > .submenu {
   display: block;
-  background-color: var(--color-9);
 }
 
 /* Submenú anidado (subcategorías) */
@@ -149,6 +146,31 @@ header {
   top: 0;
 }
 
+/* animaciones */
+.logo-yofre, .buscador, .links {
+  animation: fallSequence 0.5s ease-out forwards;
+  transform: translateY(-50px);
+  opacity: 0;
+}
+
+.logo-yofre {
+  animation-delay: 0.1s;
+}
+
+.buscador {
+  animation-delay: 0.3s;
+}
+
+.links {
+  animation-delay: 0.5s;
+}
+
+@keyframes fallSequence {
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 .main {
   height: 70vh;
   display: flex;
@@ -198,6 +220,32 @@ footer a {
 
 .redes-footer i {
   margin: 10px;
+}
+
+.redes-footer :hover {
+  background-color: var(--color-7);
+  border-radius: 15px;
+}
+
+/* animaciones */
+#footer-indexx, .footer {
+  animation: fallSequence 0.5s ease-out forwards;
+  transform: translateY(50px);
+  opacity: 0;
+}
+
+#footer-indexx, .footer {
+  animation-delay: 0.8s;
+}
+
+@keyframes fallSequence {
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.body-index {
+  background-color: black;
 }
 
 .top-headindex {
@@ -385,6 +433,23 @@ footer a {
     justify-content: center;
   }
 }
+/* animaciones */
+#main-index {
+  animation: fallSequence 0.5s ease-out forwards;
+  transform: translateX(-100px);
+  opacity: 0;
+}
+
+#main-index {
+  animation-delay: 1s;
+}
+
+@keyframes fallSequence {
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
 /* aca comienza main del catalogo*/
 .titulo-main h2 {
   color: var(--color-7);
@@ -459,6 +524,23 @@ footer a {
   margin-bottom: 30px;
 }
 
+/* animaciones */
+#main-catalogo {
+  animation: fallSequence 0.5s ease-out forwards;
+  transform: translateX(-100px);
+  opacity: 0;
+}
+
+#main-catalogo {
+  animation-delay: 1s;
+}
+
+@keyframes fallSequence {
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
 /* comienza main de los comercios*/
 .main-comercios {
   width: 100%;
@@ -508,6 +590,23 @@ footer a {
   padding: 5px;
 }
 
+/* animaciones */
+.main-comercios {
+  animation: fallSequence 0.5s ease-out forwards;
+  transform: translateX(-100px);
+  opacity: 0;
+}
+
+.main-comercios {
+  animation-delay: 1s;
+}
+
+@keyframes fallSequence {
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
 /* Main de Contato */
 .contacto-form-inputs {
   display: flex;
@@ -556,6 +655,23 @@ footer a {
   padding: 20px;
 }
 
+/* animaciones */
+#main {
+  animation: fallSequence 0.5s ease-out forwards;
+  transform: translateX(-100px);
+  opacity: 0;
+}
+
+#main {
+  animation-delay: 0.5s;
+}
+
+@keyframes fallSequence {
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
 /* aca comienza main del acceso comercios*/
 .body-acceso {
   height: 100vh;
@@ -703,6 +819,23 @@ footer a {
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+}
+/* animaciones */
+#main-acceso {
+  animation: fallSequence 0.5s ease-out forwards;
+  transform: translateX(-100px);
+  opacity: 0;
+}
+
+#main-acceso {
+  animation-delay: 1s;
+}
+
+@keyframes fallSequence {
+  to {
+    transform: translateX(0);
+    opacity: 1;
   }
 }
 

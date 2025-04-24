@@ -155,3 +155,22 @@ font-weight: bold;
         
     }
 }
+
+/* animaciones */
+
+#main-acceso {
+
+    animation: fallSequence 0.5s ease-out forwards;
+    transform: translateX(-100px);
+    opacity: 0;
+}
+
+#main-acceso { animation-delay: 1s; }
+
+
+@keyframes fallSequence {
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}

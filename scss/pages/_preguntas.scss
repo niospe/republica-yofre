@@ -3,3 +3,22 @@
     color: var(--color-6);
     padding: 20px;
 }
+
+/* animaciones */
+
+#main {
+
+    animation: fallSequence 0.5s ease-out forwards;
+    transform: translateX(-100px);
+    opacity: 0;
+}
+
+#main { animation-delay: .5s; }
+
+
+@keyframes fallSequence {
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}

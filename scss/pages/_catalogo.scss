@@ -72,3 +72,22 @@
     margin-top: 5px;
     margin-bottom: 30px;
 }
+
+/* animaciones */
+
+#main-catalogo {
+
+    animation: fallSequence 0.5s ease-out forwards;
+    transform: translateX(-100px);
+    opacity: 0;
+}
+
+#main-catalogo { animation-delay: 1s; }
+
+
+@keyframes fallSequence {
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}

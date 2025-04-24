@@ -38,3 +38,26 @@ footer a {
     .redes-footer i {
         margin: 10px;
     }
+
+    .redes-footer :hover {
+        background-color:var(--color-7);
+        border-radius: 15px;
+    }
+
+    /* animaciones */
+    #footer-indexx, .footer {
+
+        animation: fallSequence 0.5s ease-out forwards;
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    
+    #footer-indexx, .footer { animation-delay: 0.8s; }
+    
+    @keyframes fallSequence {
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+    
