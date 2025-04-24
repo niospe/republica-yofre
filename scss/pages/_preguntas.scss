@@ -6,14 +6,14 @@
 
 /* animaciones */
 
-#main {
+.texto-preguntas {
 
     animation: fallSequence 0.5s ease-out forwards;
     transform: translateX(-100px);
     opacity: 0;
 }
 
-#main { animation-delay: .5s; }
+.texto-preguntas { animation-delay: .5s; }
 
 
 @keyframes fallSequence {

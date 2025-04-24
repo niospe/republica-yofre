@@ -530,14 +530,71 @@ footer a {
   margin-bottom: 30px;
 }
 
+/* Aca comienza el Responsive MOVIL del catalogo */
+@media screen and (max-width: 576px) {
+  .content-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin-top: 10px;
+    border-color: 2px white;
+  }
+  .categoria-main {
+    width: 90%;
+    height: 50%;
+    padding: 0;
+  }
+  .content-main img {
+    display: none;
+  }
+  .img-ropa {
+    background-image: url("../images/ropa2.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .img-comida {
+    background-image: url("../images/comida2.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .img-regalo {
+    background-image: url("../images/regalo2.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .img-hogar {
+    background-image: url("../images/hogar2.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .img-tecno {
+    background-image: url("../images/tecnologia2.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .content-main a {
+    font-size: 3rem;
+    padding: 0px;
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0), var(--color-9));
+    text-transform: uppercase;
+    margin: 0;
+  }
+}
 /* animaciones */
-#main-catalogo {
+.content-main {
   animation: fallSequence 0.5s ease-out forwards;
   transform: translateX(-100px);
   opacity: 0;
 }
 
-#main-catalogo {
+.content-main {
   animation-delay: 1s;
 }
 
@@ -583,6 +640,7 @@ footer a {
   cursor: pointer;
   padding: 10px;
   margin-bottom: 5px;
+  transition: background-color 0.3s ease;
 }
 
 #list li:hover {
@@ -596,15 +654,27 @@ footer a {
   padding: 5px;
 }
 
+/* Aca comienza el Responsive MOVIL del comercio */
+@media screen and (max-width: 576px) {
+  .main-comercios {
+    height: 50vh;
+  }
+  #map {
+    height: 40vh;
+  }
+  #list {
+    height: 40vh;
+  }
+}
 /* animaciones */
-.main-comercios {
+#container {
   animation: fallSequence 0.5s ease-out forwards;
   transform: translateX(-100px);
   opacity: 0;
 }
 
-.main-comercios {
-  animation-delay: 1s;
+#container {
+  animation-delay: 0.5s;
 }
 
 @keyframes fallSequence {
@@ -655,6 +725,39 @@ footer a {
   border-radius: 30px;
 }
 
+/* Aca comienza el Responsive MOVIL del contacto */
+@media screen and (max-width: 576px) {
+  .contacto-form {
+    width: 90%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+  }
+  .contacto-form-inputs input {
+    margin: 5px;
+    padding: 5px;
+  }
+  #mensaje {
+    height: 100px;
+  }
+}
+/* animaciones */
+.contacto-form {
+  animation: fallSequence 0.5s ease-out forwards;
+  transform: translateX(-100px);
+  opacity: 0;
+}
+
+#contacto-form {
+  animation-delay: 0.5s;
+}
+
+@keyframes fallSequence {
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
 /* Main preguntas */
 .texto-preguntas {
   color: var(--color-6);
@@ -662,13 +765,13 @@ footer a {
 }
 
 /* animaciones */
-#main {
+.texto-preguntas {
   animation: fallSequence 0.5s ease-out forwards;
   transform: translateX(-100px);
   opacity: 0;
 }
 
-#main {
+.texto-preguntas {
   animation-delay: 0.5s;
 }
 
@@ -746,7 +849,7 @@ footer a {
   font-size: 0.7rem;
 }
 
-/* Aca comienza el Responsive MOVIL del index */
+/* Aca comienza el Responsive MOVIL del acceso */
 @media screen and (max-width: 576px) {
   .top-header {
     display: grid;
@@ -794,6 +897,9 @@ footer a {
   .acceso {
     text-align: center;
   }
+  .acceso-form {
+    height: 50vh;
+  }
   .links {
     display: flex;
     justify-content: space-around;
@@ -828,14 +934,14 @@ footer a {
   }
 }
 /* animaciones */
-#main-acceso {
+.acceso-form {
   animation: fallSequence 0.5s ease-out forwards;
   transform: translateX(-100px);
   opacity: 0;
 }
 
-#main-acceso {
-  animation-delay: 1s;
+.acceso-form {
+  animation-delay: 0.5s;
 }
 
 @keyframes fallSequence {

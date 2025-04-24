@@ -63,7 +63,7 @@ font-weight: bold;
     font-size: .7rem;
 }
 
-/* Aca comienza el Responsive MOVIL del index */
+/* Aca comienza el Responsive MOVIL del acceso */
 @media screen and (max-width: 576px) {
 
     .top-header{
@@ -115,6 +115,9 @@ font-weight: bold;
     .acceso{
         text-align: center;
     }
+    .acceso-form{
+        height: 50vh;
+    }
 
     
     .links{
@@ -158,14 +161,14 @@ font-weight: bold;
 
 /* animaciones */
 
-#main-acceso {
+.acceso-form {
 
     animation: fallSequence 0.5s ease-out forwards;
     transform: translateX(-100px);
     opacity: 0;
 }
 
-#main-acceso { animation-delay: 1s; }
+.acceso-form { animation-delay: 0.5s; }
 
 
 @keyframes fallSequence {

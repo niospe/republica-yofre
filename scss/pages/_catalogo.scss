@@ -73,16 +73,79 @@
     margin-bottom: 30px;
 }
 
+/* Aca comienza el Responsive MOVIL del catalogo */
+@media screen and (max-width: 576px) {
+    .content-main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        margin-top: 10px;
+        border-color: 2px white;
+    }
+    .categoria-main{
+        width: 90%;
+        height: 50%;
+        padding: 0;
+    }
+    .content-main img{
+        display: none;
+        
+    }
+ 
+    .img-ropa{
+        background-image: url("../images/ropa2.jpg");
+        background-size: 100% ; 
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    
+    .img-comida{
+        background-image: url("../images/comida2.jpg");
+        background-size: 100% ; 
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .img-regalo{
+        background-image: url("../images/regalo2.jpg");
+        background-size: 100% ; 
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .img-hogar{
+        background-image: url("../images/hogar2.jpg");
+        background-size: 100% ; 
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .img-tecno{
+        background-image: url("../images/tecnologia2.jpg");
+        background-size: 100% ; 
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .content-main a {
+        font-size: 3rem;
+        padding: 0px;
+        background-image: linear-gradient(0deg, rgba(0, 0, 0, 0), var(--color-9) );
+        text-transform: uppercase;
+        margin: 0;
+        
+    }
+}
+
 /* animaciones */
 
-#main-catalogo {
+.content-main {
 
     animation: fallSequence 0.5s ease-out forwards;
     transform: translateX(-100px);
     opacity: 0;
 }
 
-#main-catalogo { animation-delay: 1s; }
+.content-main { animation-delay: 1s; }
 
 
 @keyframes fallSequence {

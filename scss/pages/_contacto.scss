@@ -39,3 +39,39 @@
         border-radius: 30px;
     }
     
+    /* Aca comienza el Responsive MOVIL del contacto */
+@media screen and (max-width: 576px) {
+    .contacto-form{
+        width: 90%;
+        height: 50vh;
+        display: flex;
+        justify-content: center;
+    }
+    .contacto-form-inputs input{
+        margin: 5px;
+        padding: 5px;
+    }
+    #mensaje{
+        height: 100px;
+    }
+    
+}
+
+/* animaciones */
+
+.contacto-form {
+
+    animation: fallSequence 0.5s ease-out forwards;
+    transform: translateX(-100px);
+    opacity: 0;
+}
+
+#contacto-form { animation-delay: .5s; }
+
+
+@keyframes fallSequence {
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}

@@ -30,7 +30,9 @@
     cursor: pointer;
     padding: 10px;
     margin-bottom: 5px;
+    transition: background-color 0.3s ease;
 }
+
 #list li:hover {
     background-color: var(--color-1);
     border-radius: 10px;
@@ -41,16 +43,30 @@
     padding: 5px;
 }
 
+/* Aca comienza el Responsive MOVIL del comercio */
+@media screen and (max-width: 576px) {
+    .main-comercios{
+        height: 50vh;
+    }
+    #map {
+        height: 40vh;
+    }
+    #list{
+        height: 40vh;
+    }
+  
+}
+
 /* animaciones */
 
-.main-comercios {
+#container {
 
     animation: fallSequence 0.5s ease-out forwards;
     transform: translateX(-100px);
     opacity: 0;
 }
 
-.main-comercios { animation-delay: 1s; }
+#container { animation-delay: .5s; }
 
 
 @keyframes fallSequence {
