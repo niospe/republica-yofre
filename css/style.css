@@ -93,7 +93,7 @@ header {
   margin: 0;
   display: flex;
   justify-content: flex-start;
-  z-index: 9999;
+  z-index: 1000;
 }
 
 .link-menu:hover, .submenu li a:hover {
@@ -113,10 +113,10 @@ header {
 
 .menu li {
   position: relative;
+  padding: 10px 0;
 }
 
 .menu li a {
-  display: block;
   color: var(--color-7);
   text-decoration: none;
 }
@@ -131,7 +131,7 @@ header {
   padding-left: 0;
   margin: 0;
   min-width: 100px;
-  z-index: 9998;
+  z-index: 9999;
 }
 
 /* Mostrar submenú al pasar el mouse */
@@ -147,7 +147,7 @@ header {
 }
 
 /* animaciones */
-.logo-yofre, .buscador, .links {
+.logo-yofre, .buscador, .links > :not(.submenu) {
   animation: fallSequence 0.5s ease-out forwards;
   transform: translateY(-50px);
   opacity: 0;
@@ -171,6 +171,12 @@ header {
     opacity: 1;
   }
 }
+.submenu {
+  animation: none !important;
+  transform: none !important;
+  opacity: 1 !important;
+}
+
 .main {
   height: 70vh;
   display: flex;
@@ -441,7 +447,7 @@ footer a {
 }
 
 #main-index {
-  animation-delay: 1s;
+  animation-delay: 0.8s;
 }
 
 @keyframes fallSequence {
