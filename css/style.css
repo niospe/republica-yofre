@@ -191,6 +191,12 @@ header {
   margin-right: auto;
 }
 
+.titulo-main h1 {
+  color: var(--color-7);
+  text-align: center;
+  padding: 10px 20px;
+}
+
 /* aca comienza footer*/
 footer a {
   color: black;
@@ -457,12 +463,6 @@ footer a {
   }
 }
 /* aca comienza main del catalogo*/
-.titulo-main h2 {
-  color: var(--color-7);
-  text-align: center;
-  padding: 10px 20px;
-}
-
 .titulo-main {
   width: 100%;
   margin: 0px;
